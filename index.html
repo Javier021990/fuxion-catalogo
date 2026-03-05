@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Catálogo Fuxion | Pedido por WhatsApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <div class="brand__logo">F</div>
+        <div class="brand__text">
+          <div class="brand__name">Catálogo Fuxion</div>
+          <div class="brand__tag">Pedido directo por WhatsApp</div>
+        </div>
+      </div>
+
+      <div class="topbar__actions">
+        <a class="btn btn--ghost" id="openCatalogBtn" href="#catalogo">Ver catálogo</a>
+        <a class="btn btn--wa" id="waHeaderBtn" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="catalogo">
+      <div class="hero__left">
+        <h1>Productos Fuxion</h1>
+        <p class="muted">
+          Explora por líneas, busca tu producto y envía tu pedido por WhatsApp en segundos.
+        </p>
+
+        <div class="searchRow">
+          <div class="search">
+            <input id="searchInput" type="search" placeholder="Buscar producto (ej: THERMO, YOUTH, ON)..." />
+            <button class="btn btn--ghost" id="clearBtn" type="button">Limpiar</button>
+          </div>
+        </div>
+
+        <div class="chips" id="chips"></div>
+
+        <div class="metaRow">
+          <div class="meta muted" id="resultsMeta">Cargando productos…</div>
+          <div class="selectWrap">
+            <label class="muted" for="perPageSelect">Por página</label>
+            <select id="perPageSelect">
+              <option value="8">8</option>
+              <option value="12" selected>12</option>
+              <option value="16">16</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <div class="infoCard">
+          <div class="infoCard__title">Pedido rápido</div>
+          <ol class="infoCard__list">
+            <li>Elige tu línea o busca un producto</li>
+            <li>Abre la ficha y ajusta la cantidad</li>
+            <li>Envía el pedido por WhatsApp</li>
+          </ol>
+          <div class="infoCard__note muted">
+            *No se muestran precios. Confirmas disponibilidad y envío por WhatsApp.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gridSection">
+      <div id="grid" class="grid"></div>
+
+      <div class="pager">
+        <button class="btn btn--ghost" id="prevBtn" type="button">← Anterior</button>
+        <div class="pager__info muted" id="pageInfo">Página 1</div>
+        <button class="btn btn--ghost" id="nextBtn" type="button">Siguiente →</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modalOverlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" id="modalClose" aria-label="Cerrar">✕</button>
+
+      <div class="modal__body">
+        <div class="modal__img" id="modalImg"></div>
+
+        <div class="modal__content">
+          <h2 id="modalTitle"></h2>
+          <div class="badge" id="modalLine"></div>
+          <p class="muted" id="modalDesc"></p>
+
+          <div class="qtyRow">
+            <div class="qty">
+              <button class="qty__btn" id="qtyMinus" type="button">−</button>
+              <input id="qtyInput" type="number" min="1" value="1" />
+              <button class="qty__btn" id="qtyPlus" type="button">+</button>
+            </div>
+
+            <button class="btn btn--wa btn--wide" id="waBtn" type="button">
+              Enviar pedido por WhatsApp
+            </button>
+          </div>
+
+          <div class="muted small">
+            El mensaje incluirá producto, línea y cantidad.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner muted">
+      © <span id="year"></span> Catálogo WhatsApp-first • Hecho para vender rápido
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
