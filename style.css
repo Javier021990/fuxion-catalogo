@@ -1,24 +1,22 @@
 :root{
-    --bg:#0b0f14;
-    --card:#101826;
-    --card2:#0f1622;
-    --text:#e8eef7;
-    --muted:#a7b3c7;
-    --line:#24344e;
-    --accent:#6ee7ff;
+    --bg:#f6f8fb;
+    --card:#ffffff;
+    --card2:#ffffff;
+    --text:#0f172a;
+    --muted:#64748b;
+    --line:#e2e8f0;
+    --accent:#22c55e;
     --wa:#25D366;
-    --shadow: 0 20px 60px rgba(0,0,0,.35);
+    --shadow: 0 14px 40px rgba(2,6,23,.10);
   }
   
   *{box-sizing:border-box}
   html,body{height:100%}
   body{
     margin:0;
-    background: radial-gradient(900px 500px at 20% 10%, rgba(110,231,255,.15), transparent 60%),
-                radial-gradient(900px 500px at 80% 0%, rgba(37,211,102,.12), transparent 55%),
-                var(--bg);
-    color:var(--text);
-    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: var(--bg);
+  color:var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
   }
   
   .container{max-width:1100px; margin:0 auto; padding:0 16px;}
