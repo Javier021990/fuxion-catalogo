@@ -4,69 +4,69 @@
       "name": "GANOMAS CAPPUCCINO",
       "line": "Inmunológica",
       "shortDescription": "Bebida tipo cappuccino con ingredientes funcionales.",
-      "image": ""
+      "image": "img/COMBO ANTIEDAD.jpeg"
     },
     {
       "id": "vera-plus",
       "name": "VERA+",
       "line": "Inmunológica",
       "shortDescription": "Bebida funcional para tu rutina diaria.",
-      "image": ""
+      "image": "img/VERA.jpeg"
     },
     {
       "id": "biopro-fit",
       "name": "BIOPRO+ FIT",
       "line": "Control de Peso y Medidas",
       "shortDescription": "Batido proteico para complementar tu nutrición.",
-      "image": ""
+      "image": "img/BIOPRO.jpeg"
     },
     {
       "id": "thermo-t3",
       "name": "THERMO T3",
       "line": "Control de Peso y Medidas",
       "shortDescription": "Bebida funcional tipo té para tu día a día.",
-      "image": ""
+      "image": "img/THERMO T3.jpeg"
     },
     {
       "id": "te-nocarb",
       "name": "TE NOCARB",
       "line": "Control de Peso y Medidas",
       "shortDescription": "Bebida funcional para acompañar tu rutina.",
-      "image": ""
+      "image": "img/COMBO ANTIEDAD.jpeg"
     },
     {
       "id": "youth-elixir",
       "name": "YOUTH ELIXIR",
       "line": "Anti-Edad",
       "shortDescription": "Bebida funcional para complementar tu estilo de vida.",
-      "image": ""
+      "image": "img/YOUTH ELIXIR.jpeg"
     },
     {
       "id": "golden-flx",
       "name": "GOLDEN FLX",
       "line": "Anti-Edad",
       "shortDescription": "Bebida funcional con ingredientes especiados.",
-      "image": "img/COMBO ANTIEDAD.jpeg"
+      "image": "img/ON.jpeg"
     },
     {
       "id": "on",
       "name": "ON",
       "line": "Vigor Mental",
       "shortDescription": "Bebida funcional para acompañar enfoque y energía.",
-      "image": ""
+      "image": "img/NO STRESS.jpeg"
     },
     {
       "id": "no-stress",
       "name": "NO STRESS",
       "line": "Vigor Mental",
       "shortDescription": "Bebida funcional para acompañar tu rutina diaria.",
-      "image": ""
+      "image": "img/NO STRESS.jpeg"
     },
     {
       "id": "prunex-1",
       "name": "PRUNEX 1",
       "line": "Sistema Base (Limpieza)",
       "shortDescription": "Bebida funcional para tu rutina diaria.",
-      "image": ""
+      "image": "img/PRUNEX.jpeg"
     }
   ]
